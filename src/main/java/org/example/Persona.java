@@ -1,30 +1,30 @@
 package org.example;
 
 import java.util.Scanner;
-import java.util.function.DoubleToIntFunction;
 
 public class Persona {
     String pFIO;
-    String pSex;
+    String pGender;
     int pAge;
 
-    public Persona(String p_FIO, String p_Sex, int p_Age){
+    public Persona(String p_FIO, String p_Gender, int p_Age){
         this.pFIO = p_FIO;
-        this.pSex = p_Sex;
+        this.pGender = p_Gender;
         this.pAge = p_Age;
     }
 
     public String getpFIO() {
         return pFIO;
     }
-    public String getpSex() {
-        return pSex;
+    public String getpGender() {
+        return pGender;
     }
     public int getpAge() {
         return pAge;
     }
 
     public boolean checkAddGroup(Group group){
+        System.out.print("\033[H\033[J");
         System.out.println("Добавить в группу " + group.deptName + "?");
         Scanner in = new Scanner(System.in);
         System.out.println("0 - НЕТ\n1 - ДА");

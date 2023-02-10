@@ -1,10 +1,10 @@
 package org.example;
 
-public class incorporated {
+public class Incorporated {
     String corpName;
     String corpDept;
 
-    public void incorporated(String CorpName, String CorpDept){
+    public void Incorporated(String CorpName, String CorpDept){
         this.corpName = CorpName;
         this.corpDept = CorpDept;
     }
